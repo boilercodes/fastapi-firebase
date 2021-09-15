@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/{repo}">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png" alt="Logo" width="80" height="80">
+    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">{title}</h3>
