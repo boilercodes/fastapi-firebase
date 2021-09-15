@@ -33,6 +33,12 @@
         <li><a href="#installation">Manually</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#environment-variables">Environment Variables</a>
+      <ul>
+        <li><a href="#backend">Backend</a></li>
+      </ul>
+    </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -90,9 +96,12 @@ The requirements are:
 To run this project, you will need to add the following environment variables to your .env file or in the
 docker-compose.yaml file.
 
-| Settings | Description                   | Required |
-|----------|-------------------------------|----------|
-| DEBUG    | Toggles debug mode in logging | No       |
+### Backend
+| Variable     | Description               | Default                                                |
+|--------------|---------------------------|--------------------------------------------------------|
+| API_V1_STR   | The path of the API       | /api/v1                                                |
+| API_PORT     | The API port              | 8080                                                   |
+| POSTGRES_URI | The Postgres database URI | postgresql://postgres:changeme@localhost:5432/postgres |
 
 <!-- USAGE EXAMPLES -->
 
