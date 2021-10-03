@@ -16,7 +16,7 @@ COPY pyproject.toml poetry.lock /backend/
 RUN ["poetry", "install", "--no-dev", "--no-interaction"]
 
 # Copy the rest of the project code
-COPY . .
+COPY backend .
 
 # Start the bot
 CMD ["python", "-m", "app"]
