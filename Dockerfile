@@ -19,4 +19,4 @@ RUN ["poetry", "install", "--no-dev", "--no-interaction"]
 COPY . .
 
 # Start the bot
-CMD ["python", "-m", "app"]
+CMD ["task", "start"]
