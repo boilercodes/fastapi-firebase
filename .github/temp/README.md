@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/{repo}">
-    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Logo" width="80" height="80">
+    <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">{title}</h3>
@@ -35,9 +35,6 @@
     </li>
     <li>
       <a href="#environment-variables">Environment Variables</a>
-      <ul>
-        <li><a href="#backend">Backend</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -79,16 +76,11 @@ The requirements for Docker are:
 
 The requirements are:
 
-* [Python](https://www.python.org/downloads/) and [Poetry](https://python-poetry.org/docs/) (for the backend)
-* [Node]() (for the frontend)
+* [Python](https://www.python.org/downloads/) and [Poetry](https://python-poetry.org/docs/)
 
 1. Install the backend dependencies
    ```shell
    poetry install --no-dev
-   ```
-2. Install the frontend dependencies
-   ```shell
-   npm install --only=prod
    ```
 
 ## Environment Variables
@@ -96,10 +88,10 @@ The requirements are:
 To run this project, you will need to add the following environment variables to your .env file or in the
 docker-compose.yaml file.
 
-### Backend
 | Variable     | Description               | Default                                                |
 |--------------|---------------------------|--------------------------------------------------------|
-| API_V1_STR   | The path of the API       | /api/v1                                                |
+| PROJECT_NAME | The name of the API       | FastAPI                                                |
+| API_ENDPOINT | The endpoint of the API   | /api/v1                                                |
 | API_PORT     | The API port              | 8080                                                   |
 | POSTGRES_URI | The Postgres database URI | postgresql://postgres:changeme@localhost:5432/postgres |
 
@@ -119,12 +111,6 @@ Or you can run the backend and frontend manually using
 poetry run task start
 ```
 
-and
-
-```shell
-npm run start
-```
-
 ## Contributing
 
 See [CONTRIBUTING.md](https://github.com/{repo}/blob/main/CONTRIBUTING.md) for ways to get started.
@@ -133,5 +119,4 @@ See [CONTRIBUTING.md](https://github.com/{repo}/blob/main/CONTRIBUTING.md) for w
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/{repo}/blob/main/LICENSE) for more
-information.
+Distributed under the MIT License. See [LICENSE](https://github.com/{repo}/blob/main/LICENSE) for more information.
