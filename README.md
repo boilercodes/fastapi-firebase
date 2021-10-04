@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/rmenai/website-structure">
+  <a href="https://github.com/rmenai-blueprints/fastapi">
     <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -9,14 +9,14 @@
   <p align="center">
     The most complete websites projects structure
     <br />
-    <a href="https://github.com/rmenai/website-structure"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/rmenai-blueprints/fastapi"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/rmenai/website-structure">View Demo</a>
+    <a href="https://github.com/rmenai-blueprints/fastapi">View Demo</a>
     ·
-    <a href="https://github.com/rmenai/website-structure/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
+    <a href="https://github.com/rmenai-blueprints/fastapi/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/rmenai/website-structure/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
+    <a href="https://github.com/rmenai-blueprints/fastapi/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -81,13 +81,13 @@ will change all the files to match your repository.
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/rmenai/website-structure/blob/main/CONTRIBUTING.md) for ways to get started.
+See [CONTRIBUTING.md](https://github.com/rmenai-blueprints/fastapi/blob/main/CONTRIBUTING.md) for ways to get started.
 
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/rmenai/website-structure/blob/main/LICENSE) for more
+Distributed under the MIT License. See [LICENSE](https://github.com/rmenai-blueprints/fastapi/blob/main/LICENSE) for more
 information.
 
 ## Contact
