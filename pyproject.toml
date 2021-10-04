@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "fastapi"
+name = "FastAPI blueprint"
 version = "0.1.0"
 description = "A FastAPI template"
 authors = ["rmenai <rami.menai@outlook.com>"]

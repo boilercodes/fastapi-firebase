@@ -22,7 +22,7 @@ title="$(TitleCaseConverter "$title")"
 repo="$author/$name"
 
 # Change backend pyproject.toml
-sed -i "s/fastapi/$name/g" backend/pyproject.toml
+sed -i "s/FastAPI blueprint/$name/g" backend/pyproject.toml
 sed -i "s/A FastAPI template/$description/g" backend/pyproject.toml # Remove description
 sed -i "s/rmenai <rami.menai@outlook.com>/$author/g" backend/pyproject.toml # Replace authors
 
