@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "website-structure"
+name = "fastapi"
 version = "0.1.0"
-description = "My complete websites projects structure"
+description = "A FastAPI template"
 authors = ["rmenai <rami.menai@outlook.com>"]
 license = "MIT"
 
