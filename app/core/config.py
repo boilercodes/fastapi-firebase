@@ -2,6 +2,8 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
+    """The app settings."""
+
     PROJECT_NAME: str = "FastAPI"
     API_ENDPOINT: str = "/api/v1"
 
@@ -9,6 +11,8 @@ class Settings(BaseSettings):
     POSTGRES_URI: str = "postgresql://postgres:changeme@localhost:5432/postgres"
 
     class Config:
+        """The Pydantic settings configuration."""
+
         env_file = ".env"
 
 
