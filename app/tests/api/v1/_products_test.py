@@ -9,7 +9,7 @@ from app.core import settings
 
 def test_create_product(client: TestClient, random_product: Dict[str, Any]) -> None:
     """Test the create API."""
-    response = client.post(f"{settings.API_V1_STR}/products", json=random_product)
+    response = client.post(f"{settings.API_ENDPOINT}/products", json=random_product)
     product = response.json()
     assert response.status_code == 200
     assert product.get("name") == random_product.get("name")
@@ -18,7 +18,7 @@ def test_create_product(client: TestClient, random_product: Dict[str, Any]) -> N
 
 def test_read_products(client: TestClient) -> None:
     """Test the read API."""
-    response = client.get(f"{settings.API_V1_STR}/products")
+    response = client.get(f"{settings.API_ENDPOINT}/products")
     products = response.json()
     assert response.status_code == 200
     assert len(products) > 0
@@ -27,7 +27,7 @@ def test_read_products(client: TestClient) -> None:
 def test_update_product(client: TestClient, random_product: Dict[str, Any]) -> None:
     """Test the update API."""
     random_product["price"] = 100
-    response = client.put(f"{settings.API_V1_STR}/products", json=random_product)
+    response = client.put(f"{settings.API_ENDPOINT}/products", json=random_product)
     product = response.json()
     assert response.status_code == 200
     assert product.get("price") == random_product.get("price")
@@ -35,7 +35,7 @@ def test_update_product(client: TestClient, random_product: Dict[str, Any]) -> N
 
 def test_delete_product(client: TestClient, random_product: Dict[str, Any]) -> None:
     """Test the delete API."""
-    response = client.delete(f"{settings.API_V1_STR}/products?id={random_product.get('id')}")
+    response = client.delete(f"{settings.API_ENDPOINT}/products?id={random_product.get('id')}")
     message = response.json()
     assert response.status_code == 200
     assert "message" in message
