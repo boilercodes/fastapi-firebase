@@ -1,3 +1,8 @@
+import sys
+
+# Add app to PYTHONAPP.
+sys.path = ['', '..'] + sys.path[1:]
+
 from alembic import context
 from logging.config import fileConfig
 from sqlalchemy import engine_from_config, pool
