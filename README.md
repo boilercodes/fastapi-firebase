@@ -1,13 +1,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/rmenai-blueprints/fastapi">
-    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Logo" width="80" height="80">
+    <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Website Structure</h3>
+<h3 align="center">FastAPI</h3>
 
   <p align="center">
-    The most complete websites projects structure
+    A modern high-performance web framework for building APIs with Python 3.6+
     <br />
     <a href="https://github.com/rmenai-blueprints/fastapi"><strong>Explore the docs »</strong></a>
     <br />
@@ -45,7 +45,7 @@
 
 ## About The Project
 
-This is my websites project structure. The backend is with FastAPI and the frontend with AngularJs.
+This is the FastAPI template that I use for my backend and API development in Python.
 
 <!-- Usage -->
 
@@ -66,6 +66,7 @@ will change all the files to match your repository.
 #### Backend:
 * [FastAPI](https://fastapi.tiangolo.com/) for the backend API.
 * [SQLAlchemy](https://www.sqlalchemy.org/) for the database ORM.
+* [Alembic](https://alembic.sqlalchemy.org/en/latest/) for the database migrations.
 * [Poetry](https://python-poetry.org/) for dependency management.
 * [Pytest](https://docs.pytest.org/en/6.2.x/) for writing powerful tests.
 * [pre-commit](https://pre-commit.com/) and [flake8](https://flake8.pycqa.org/en/latest/) for git hooks linting.
