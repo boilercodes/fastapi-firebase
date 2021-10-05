@@ -1,6 +1,9 @@
 name: Rename project from template
 
-on: [ push ]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   rename:
