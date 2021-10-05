@@ -2,6 +2,8 @@ name: Lint & Test
 
 on:
   push:
+    branches:
+      - main
     paths-ignore:
       - 'README.md'
       - 'SECURITY.md'
@@ -15,7 +17,6 @@ on:
 
 jobs:
   lint-test:
-    name: Lint & Test
     runs-on: ubuntu-latest
     env:
       # Configure pip to cache dependencies and do a user install
