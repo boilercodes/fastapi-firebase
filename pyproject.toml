@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "FastAPI blueprint"
+name = "rmenai-blueprints/fastapi"
 version = "0.1.0"
-description = "A FastAPI template"
+description = "My FastAPI template"
 authors = ["rmenai <rami.menai@outlook.com>"]
 license = "MIT"
 
