@@ -27,7 +27,7 @@ sed -i "s/My FastAPI template/$description/g" pyproject.toml # Remove descriptio
 sed -i "s/rmenai <rami.menai@outlook.com>/$author/g" pyproject.toml # Replace authors
 
 # Change LICENSE
-sed -i "s/fastapi/$name/g" LICENSE
+sed -i "s|rmenai-blueprints/fastapi|$name|g" LICENSE # Separator is |
 
 # Change SECURITY.md
 sed -i "s/rmenai/$author/g" SECURITY.md
