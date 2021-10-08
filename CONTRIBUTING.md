@@ -19,3 +19,38 @@ failing to comply with our guidelines may lead to a rejection of the contributio
 
 4. **Use assets licensed for public use**. Whenever the assets are images, audio or even code, they must have a license
    compatible with our projects.
+
+## Before commits
+
+Install the project git hooks using [poetry]
+
+```shell
+poetry run task precommit
+```
+
+Now `pre-commit` will run automatically on `git commit`
+
+```console
+root@user:~$ git commit -m "some commit"
+Check docstring is first.................................................Passed
+Check for merge conflicts................................................Passed
+Check Toml...............................................................Passed
+Check Yaml...............................................................Passed
+Detect Private Key.......................................................Passed
+Fix End of Files.........................................................Passed
+Tests should end in _test.py.............................................Passed
+Trim Trailing Whitespace.................................................Passed
+Flake8...................................................................Passed
+```
+
+Or you can run it manually
+
+```shell
+poetry run task lint
+```
+
+[flake8]: https://flake8.pycqa.org/en/latest/
+
+[pre-commit]: https://pre-commit.com/
+
+[poetry]: https://python-poetry.org/
