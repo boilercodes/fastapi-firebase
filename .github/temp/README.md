@@ -72,7 +72,7 @@ The requirements for Docker are:
     * `pip install docker-compose`
     * This is only a required step for linux. Docker comes bundled with docker-compose on Mac OS and Windows.
 
-### Manually
+### For development
 
 The requirements are:
 
@@ -80,7 +80,7 @@ The requirements are:
 
 1. Install the backend dependencies
    ```shell
-   poetry install --no-dev
+   poetry install
    ```
 
 ## Environment Variables
