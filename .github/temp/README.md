@@ -30,7 +30,7 @@
       <a href="#installation">Installation</a>
       <ul>
         <li><a href="#using-docker">Using Docker</a></li>
-        <li><a href="#installation">Manually</a></li>
+        <li><a href="#for-development">For development</a></li>
       </ul>
     </li>
     <li>
