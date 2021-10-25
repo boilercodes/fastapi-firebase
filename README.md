@@ -60,10 +60,10 @@ will change all the files to match your repository.
 
 ## Features
 
-#### Project:
+### Project:
 * [Docker](https://www.docker.com/) for container packaging.
 
-#### Backend:
+### Backend:
 * [FastAPI](https://fastapi.tiangolo.com/) for the backend API.
 * [SQLAlchemy](https://www.sqlalchemy.org/) for the database ORM.
 * [Alembic](https://alembic.sqlalchemy.org/en/latest/) for the database migrations.
@@ -71,11 +71,10 @@ will change all the files to match your repository.
 * [Pytest](https://docs.pytest.org/en/6.2.x/) for writing powerful tests.
 * [pre-commit](https://pre-commit.com/) and [flake8](https://flake8.pycqa.org/en/latest/) for git hooks linting.
 
-#### GitHub:
+### GitHub:
 * [Lint & Test](https://github.com/rmenai/python-structure/blob/main/.github/workflows/lint-test.yaml)
   and [Build & Push](https://github.com/rmenai/python-structure/blob/main/.github/workflows/build-push.yaml) GitHub
   workflows.
-* [Dependabot](https://dependabot.com/) automated dependency updates.
 * [Issues](https://github.com/rmenai/python-structure/tree/main/.github/ISSUE_TEMPLATE)
   and [pull requests](https://github.com/rmenai/python-structure/blob/main/.github/pull_request_template.md) templates.
 
