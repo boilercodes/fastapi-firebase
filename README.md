@@ -72,7 +72,7 @@ will change all the files to match your repository.
 * [pre-commit](https://pre-commit.com/) and [flake8](https://flake8.pycqa.org/en/latest/) for git hooks linting.
 
 ### GitHub:
-* [Lint & Test](https://github.com/rmenai/python-structure/blob/main/.github/workflows/lint-test.yaml)
+* [Lint & Test](https://github.com/rmenai/python-structure/blob/main/.github/workflows/validate.yaml)
   and [Build & Push](https://github.com/rmenai/python-structure/blob/main/.github/workflows/build-push.yaml) GitHub
   workflows.
 * [Issues](https://github.com/rmenai/python-structure/tree/main/.github/ISSUE_TEMPLATE)
