@@ -38,7 +38,7 @@ def run_migrations_offline():
     Calls to context.execute() here emit the given string to the
     script output.
     """
-    url = settings.SQLALCHEMY_DATABASE_URI
+    url = settings.pg_dns
     context.configure(url=url, target_metadata=target_metadata, literal_binds=True,
                       dialect_opts={"paramstyle": "named"}, compare_type=True)
 
@@ -52,7 +52,7 @@ def run_migrations_online():
     and associate a connection with the context.
     """
     configuration = config.get_section(config.config_ini_section)
-    configuration["sqlalchemy.url"] = settings.POSTGRES_URI
+    configuration["sqlalchemy.url"] = settings.pg_dns
     connectable = engine_from_config(configuration, prefix="sqlalchemy.", poolclass=pool.NullPool)
 
     with connectable.connect() as connection:

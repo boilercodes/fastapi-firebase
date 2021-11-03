@@ -1,19 +1,37 @@
-from pydantic import BaseSettings
+from pydantic import BaseSettings, PostgresDsn
 
 
-class Settings(BaseSettings):
-    """The app settings."""
+class API(BaseSettings):
+    """The API settings."""
 
-    PROJECT_NAME: str = "FastAPI"
-    API_ENDPOINT: str = "/api/v1"
+    name: str = "FastAPI"
+    endpoint: str = "/api/v1"
 
-    API_PORT: int = 8080
-    POSTGRES_URI: str = "postgresql://postgres:changeme@localhost:5432/postgres"
+    host: str = "0.0.0.0"
+    port: int = 8080
 
     class Config:
         """The Pydantic settings configuration."""
 
         env_file = ".env"
+        env_prefix = "API_"
 
 
-settings = Settings()
+class Global(BaseSettings):
+    """The app settings."""
+
+    api: API = API()
+    pg_dns: PostgresDsn = "postgresql://postgres:changeme@localhost:5432/postgres"
+
+    class Config:
+        """The Pydantic settings configuration."""
+
+        env_file = ".env"
+        fields = {
+            "pg_dns": {
+                "env": "POSTGRES_URI"
+            }
+        }
+
+
+settings = Global()

@@ -4,9 +4,9 @@ from fastapi import FastAPI
 from app.api.v1 import api_router
 from app.core import settings
 
-app = FastAPI(title=settings.PROJECT_NAME)
+app = FastAPI(title=settings.api.name)
 
-app.include_router(api_router, prefix=settings.API_ENDPOINT)
+app.include_router(api_router, prefix=settings.api.endpoint)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=settings.API_PORT)
+    uvicorn.run(app, host=settings.api.host, port=settings.api.port)
