@@ -23,6 +23,8 @@ class Global(BaseSettings):
     api: API = API()
     pg_dns: PostgresDsn = "postgresql://postgres:changeme@localhost:5432/postgres"
 
+    debug: bool = False
+
     class Config:
         """The Pydantic settings configuration."""
 
