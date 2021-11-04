@@ -35,6 +35,7 @@
       </ul>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -53,8 +54,6 @@ This is the FastAPI template that I use for my backend and API development in Py
 
 All you need to do is click on the "Use this template" button. When the repo is created a GitHub action will start. It
 will change all the files to match your repository.
-
-
 
 <!-- Features -->
 
@@ -78,6 +77,7 @@ will change all the files to match your repository.
 * [Issues](https://github.com/rmenai/python-structure/tree/main/.github/ISSUE_TEMPLATE)
   and [pull requests](https://github.com/rmenai/python-structure/blob/main/.github/pull_request_template.md) templates.
 
+<!-- CONTRIBUTING -->
 
 ## Contributing
 
@@ -89,6 +89,16 @@ See [CONTRIBUTING.md](https://github.com/rmenai-blueprints/fastapi/blob/main/CON
 
 Distributed under the MIT License. See [LICENSE](https://github.com/rmenai-blueprints/fastapi/blob/main/LICENSE) for more
 information.
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgements
+
+ - [fastapi-boilterplate](https://github.com/skb1129/fastapi-boilerplate)
+ - [full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql)
+ - [sir-lancebot](https://github.com/python-discord/sir-lancebot)
+
+<!-- CONTACT -->
 
 ## Contact
 
