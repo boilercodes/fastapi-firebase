@@ -1,4 +1,4 @@
-from app.db.initialise import initialise
+from app.db import initialise
 from app.db.session import SessionLocal
 
 
