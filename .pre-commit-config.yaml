@@ -9,6 +9,7 @@ repos:
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: name-tests-test
+        args: ['--django']
       - id: trailing-whitespace
   - repo: local
     hooks:
