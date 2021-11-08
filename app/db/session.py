@@ -31,6 +31,8 @@ class Session(sessionmaker):
 
     def callback(self, pg_dns: str) -> None:
         """Execute when the pool is completed."""
+        log.info("Connection to the database successful.")
+
         self.engine = create_engine(pg_dns)
         self.kw["bind"] = self.engine
 
@@ -49,7 +51,8 @@ class Session(sessionmaker):
     @staticmethod
     def get_engine(timeout: int, delay: int) -> str:
         """Get an engine depending on the settings db."""
-        for _ in range(timeout):
+        for i in range(timeout):
+            log.debug(f"Connecting to database {'.' * (timeout - i)}")
             if database_exists(settings.pg_dns):
                 return settings.pg_dns
             time.sleep(delay)
