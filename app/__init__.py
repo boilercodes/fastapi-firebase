@@ -41,6 +41,9 @@ if root.handlers:
     for handler in root.handlers:
         root.removeHandler(handler)
 
+# Silence irrelevant loggers
+logging.getLogger("asyncio").setLevel(logging.ERROR)
+
 # Setup new logging configuration.
 logging.basicConfig(
     format=fmt,
