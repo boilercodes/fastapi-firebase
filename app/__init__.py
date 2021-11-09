@@ -53,10 +53,6 @@ logging.basicConfig(
 )
 
 # Configure uvicorn loggers.
-LOGGING_CONFIG["formatters"]["default"]["fmt"] = "%(asctime)s - %(name)s %(levelname)s: %(message)s"
-LOGGING_CONFIG["formatters"]["default"]["datefmt"] = "%H:%M:%S"
+LOGGING_CONFIG["loggers"]["uvicorn.access"]["propagate"] = True
+LOGGING_CONFIG["loggers"]["uvicorn.access"].pop("handlers")
 LOGGING_CONFIG["loggers"]["uvicorn"].pop("handlers")
-
-log = logging.getLogger(__name__)
-
-log.debug("Logging initialization complete")
