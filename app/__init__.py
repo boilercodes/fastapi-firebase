@@ -8,7 +8,7 @@ from uvicorn.config import LOGGING_CONFIG
 from app.core import settings
 
 # Set up file logging.
-log_dir = Path("app/logs")
+log_dir = Path(f"{__name__}/logs")
 log_file = log_dir / f"{datetime.now().strftime('%d-%m-%Y')}.log"
 os.makedirs(log_dir, exist_ok=True)
 
