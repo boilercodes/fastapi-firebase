@@ -1,7 +1,7 @@
 import logging
-import multiprocessing
 import sys
 import time
+from threading import Thread
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -9,6 +9,7 @@ from sqlalchemy_utils import database_exists
 
 from app.core import settings
 from app.db import Base
+from app.utils.decorators import use_callbacks
 
 log = logging.getLogger(__name__)
 
@@ -25,9 +26,9 @@ class Session(sessionmaker):
             # Manually call the error callback to use sqlite.
             self.error_callback(BaseException("Using sqlite as stated."))
         else:
-            pool = multiprocessing.Pool()
-            pool.apply_async(self.get_engine, (3, 1), callback=self.callback,
-                             error_callback=self.error_callback)
+            thread = Thread(target=self.get_engine, args=(3, 1))
+            thread.daemon = True
+            thread.start()
 
     def callback(self, pg_dns: str) -> None:
         """Execute when the pool is completed."""
@@ -48,8 +49,8 @@ class Session(sessionmaker):
 
         Base.metadata.create_all(self.engine, checkfirst=True)
 
-    @staticmethod
-    def get_engine(timeout: int, delay: int) -> str:
+    @use_callbacks
+    def get_engine(self, timeout: int, delay: int) -> str:
         """Get an engine depending on the settings db."""
         for i in range(timeout):
             log.debug(f"Connecting to database {'.' * (timeout - i)}")
