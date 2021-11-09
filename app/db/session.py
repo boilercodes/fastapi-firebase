@@ -44,7 +44,7 @@ class Session(sessionmaker):
         log.info(error)
 
         # Use sqlite if the connection to the database failed.
-        self.engine = create_engine("sqlite:///db.sqlite3")
+        self.engine = create_engine(settings.sqlite_dns)
         self.kw["bind"] = self.engine
 
         Base.metadata.create_all(self.engine, checkfirst=True)
@@ -62,7 +62,7 @@ class Session(sessionmaker):
 
 
 if "pytest" in sys.modules:
-    # Use sqlite if running tests.
+    settings.sqlite_dns = "sqlite:///pytest.sqlite3"  # Use pytest.sqlite3
     SessionLocal = Session(use_sqlite=True, autocommit=False, autoflush=False)
 else:
     SessionLocal = Session(autocommit=False, autoflush=False)

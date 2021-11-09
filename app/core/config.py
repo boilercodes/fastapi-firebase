@@ -22,6 +22,7 @@ class Global(BaseSettings):
 
     api: API = API()
     pg_dns: PostgresDsn = "postgresql://postgres:changeme@localhost:5432/postgres"
+    sqlite_dns: str = "sqlite:///db.sqlite3"
 
     debug: bool = False
 
