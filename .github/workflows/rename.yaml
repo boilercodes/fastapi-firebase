@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   rename:
-    if: ${{ github.repository != 'rmenai-blueprints/fastapi' }}
+    if: ${{ github.repository != 'boilercodes/fastapi' }}
     runs-on: ubuntu-latest
 
     steps:
