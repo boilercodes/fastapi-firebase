@@ -2,30 +2,9 @@ version: '3.8'
 
 services:
 
-  db:
-    image: postgres
-    environment:
-      POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "changeme"
-    ports:
-      - "5432:5432"
-
-  pgadmin:
-    image: dpage/pgadmin4
-    depends_on:
-      - db
-    environment:
-      PGADMIN_DEFAULT_EMAIL: "pgadmin4@pgadmin.org"
-      PGADMIN_DEFAULT_PASSWORD: "admin"
-      PGADMIN_CONFIG_SERVER_MODE: "False"
-    ports:
-      - "5050:80"
-
   backend:
     build: .
-    depends_on:
-      - db
-    environment:
-      POSTGRES_URI: "postgresql://postgres:changeme@db:5432/postgres"
+    env_file:
+      - .env
     ports:
       - "8080:8080"
