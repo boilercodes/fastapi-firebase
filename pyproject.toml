@@ -20,7 +20,7 @@ taskipy = "^1.10.2"
 [tool.poetry.dev-dependencies]
 python-dotenv = "^0.19.2"
 pytest = "^7.1.2"
-coverage = "^6.3.2"
+coverage = "^6.4.1"
 colorlog = "^6.6.0"
 pre-commit = "^2.19.0"
 flake8 = "^4.0.1"
