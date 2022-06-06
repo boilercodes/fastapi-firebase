@@ -8,7 +8,6 @@ from pydantic import BaseModel
 class ProductBase(BaseModel):
     """The base product model."""
 
-    id: Optional[int]
     name: Optional[str]
     price: Optional[float]
 

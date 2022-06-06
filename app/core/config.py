@@ -1,4 +1,4 @@
-from pydantic import BaseSettings, PostgresDsn
+from pydantic import BaseSettings
 
 
 class API(BaseSettings):
@@ -17,12 +17,25 @@ class API(BaseSettings):
         env_prefix = "API_"
 
 
+class FireBase(BaseSettings):
+    """The Firebase settings."""
+
+    project_id: str
+    private_key: str
+    client_email: str
+
+    class Config:
+        """The Pydantic settings configuration."""
+
+        env_file = ".env"
+        env_prefix = "FIREBASE_"
+
+
 class Global(BaseSettings):
     """The app settings."""
 
     api: API = API()
-    pg_dns: PostgresDsn = "postgresql://postgres:changeme@localhost:5432/postgres"
-    sqlite_dns: str = "sqlite:///db.sqlite3"
+    firebase: FireBase = FireBase()
 
     debug: bool = False
 
@@ -30,11 +43,6 @@ class Global(BaseSettings):
         """The Pydantic settings configuration."""
 
         env_file = ".env"
-        fields = {
-            "pg_dns": {
-                "env": "POSTGRES_URI"
-            }
-        }
 
 
 settings = Global()

@@ -1,6 +1,6 @@
-from datetime import datetime
 import logging.handlers
 import os
+from datetime import datetime
 from pathlib import Path
 
 from uvicorn.config import LOGGING_CONFIG

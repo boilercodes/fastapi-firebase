@@ -1,12 +1,8 @@
 from typing import Generator
 
-from app.db.session import SessionLocal
+from app.firebase.session import db
 
 
 def get_db() -> Generator:
     """Returns a db instance."""
-    try:
-        db = SessionLocal()
-        yield db
-    finally:
-        db.close()
+    yield db
