@@ -64,8 +64,7 @@ will change all the files to match your repository.
 
 ### Backend:
 * [FastAPI](https://fastapi.tiangolo.com/) for the backend API.
-* [SQLAlchemy](https://www.sqlalchemy.org/) for the database ORM.
-* [Alembic](https://alembic.sqlalchemy.org/en/latest/) for the database migrations.
+* [Firebase](https://firebase.google.com/) for the database.
 * [Poetry](https://python-poetry.org/) for dependency management.
 * [Pytest](https://docs.pytest.org/en/6.2.x/) for writing powerful tests.
 * [pre-commit](https://pre-commit.com/) and [flake8](https://flake8.pycqa.org/en/latest/) for git hooks linting.
