@@ -617,7 +617,7 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [[package]]
 name = "sqlalchemy-utils"
-version = "0.37.9"
+version = "0.38.2"
 description = "Various utility functions for SQLAlchemy."
 category = "main"
 optional = false
@@ -741,7 +741,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "fea4d6c8e07fe594ba99605ecd2c6e589dd2b16f7dea2d96f32a4973e2393b24"
+content-hash = "9efd9536be02d58e013894f26d337b7d8303df9bc51a0e7b9f4f09cc18719945"
 
 [metadata.files]
 alembic = [
@@ -1297,8 +1297,8 @@ sqlalchemy = [
     {file = "SQLAlchemy-1.4.31.tar.gz", hash = "sha256:582b59d1e5780a447aada22b461e50b404a9dc05768da1d87368ad8190468418"},
 ]
 sqlalchemy-utils = [
-    {file = "SQLAlchemy-Utils-0.37.9.tar.gz", hash = "sha256:4667edbdcb1ece011076b69772ef524bfbb17cc97e03f11ee6b85d98e7741d61"},
-    {file = "SQLAlchemy_Utils-0.37.9-py3-none-any.whl", hash = "sha256:bb6f4da8ac044cb0dd4d0278b1fb434141a5ee9d1881c757a076830ddbb04160"},
+    {file = "SQLAlchemy-Utils-0.38.2.tar.gz", hash = "sha256:9e01d6d3fb52d3926fcd4ea4a13f3540701b751aced0316bff78264402c2ceb4"},
+    {file = "SQLAlchemy_Utils-0.38.2-py3-none-any.whl", hash = "sha256:622235b1598f97300e4d08820ab024f5219c9a6309937a8b908093f487b4ba54"},
 ]
 starlette = [
     {file = "starlette-0.14.2-py3-none-any.whl", hash = "sha256:3c8e48e52736b3161e34c9f0e8153b4f32ec5d8995a3ee1d59410d92f75162ed"},
