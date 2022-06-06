@@ -22,18 +22,18 @@ title="$(TitleCaseConverter "$title")"
 repo="$author/$name"
 
 # Change pyproject.toml
-sed -i "s|boilercodes/fastapi-sql|$name|g" pyproject.toml # Separator is |
+sed -i "s|boilercodes/fastapi-firebase|$name|g" pyproject.toml # Separator is |
 sed -i "s/My FastAPI template/$description/g" pyproject.toml # Remove description
 sed -i "s/rmenai <rami.menai@outlook.com>/$author/g" pyproject.toml # Replace authors
 
 # Change LICENSE
-sed -i "s|boilercodes/fastapi-sql|$name|g" LICENSE # Separator is |
+sed -i "s|boilercodes/fastapi-firebase|$name|g" LICENSE # Separator is |
 
 # Change SECURITY.md
 sed -i "s/rmenai/$author/g" SECURITY.md
 
 # Change .github/pull_request_template.md
-sed -i "s|boilercodes/fastapi-sql|$repo|g" .github/pull_request_template.md
+sed -i "s|boilercodes/fastapi-firebase|$repo|g" .github/pull_request_template.md
 
 # Change README.md
 cp -f .github/temp/README.md README.md # Override file

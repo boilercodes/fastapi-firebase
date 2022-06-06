@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "boilercodes/fastapi-sql"
+name = "boilercodes/fastapi-firebase"
 version = "0.1.0"
 description = "My FastAPI template"
 authors = ["rmenai <rami.menai@outlook.com>"]
