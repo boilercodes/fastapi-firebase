@@ -2,8 +2,9 @@
 
 from typing import Any, Dict
 
-from app.core import settings
 from fastapi.testclient import TestClient
+
+from app.core import settings
 
 
 def test_create_product(client: TestClient, random_product: Dict[str, Any]) -> None:

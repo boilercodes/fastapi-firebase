@@ -2,11 +2,11 @@
 
 from typing import Any, List
 
+from fastapi import APIRouter, Depends, HTTPException, Response, status
 from google.cloud import firestore
 
 from app import schemas
 from app.api.deps import get_db
-from fastapi import APIRouter, Depends, HTTPException, Response, status
 
 router = APIRouter()
 

@@ -3,10 +3,10 @@
 from typing import Dict, Generator
 
 import pytest
+from fastapi.testclient import TestClient
 
 from app.__main__ import app
 from app.firebase.session import db
-from fastapi.testclient import TestClient
 
 
 @pytest.fixture(scope="session")
