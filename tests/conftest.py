@@ -3,16 +3,16 @@
 from typing import Dict, Generator
 
 import pytest
-from fastapi.testclient import TestClient
 
 from app.__main__ import app
-from app.db.session import SessionLocal
+from app.firebase.session import db
+from fastapi.testclient import TestClient
 
 
 @pytest.fixture(scope="session")
-def db() -> Generator:
+def get_db() -> Generator:
     """Return a database instance."""
-    yield SessionLocal()
+    yield db
 
 
 @pytest.fixture(scope="module")
@@ -26,7 +26,6 @@ def client() -> Generator:
 def random_product() -> Dict[str, str]:
     """Return a product example."""
     return {
-        "id": 1,
         "name": "Test Product",
         "price": 80,
     }
