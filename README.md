@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/rmenai-blueprints/fastapi">
+  <a href="https://github.com/boilercodes/fastapi-sql">
     <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -9,14 +9,14 @@
   <p align="center">
     A modern high-performance web framework for building APIs with Python 3.6+
     <br />
-    <a href="https://github.com/rmenai-blueprints/fastapi"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/boilercodes/fastapi-sql"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/rmenai-blueprints/fastapi">View Demo</a>
+    <a href="https://github.com/boilercodes/fastapi-sql">View Demo</a>
     ·
-    <a href="https://github.com/rmenai-blueprints/fastapi/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
+    <a href="https://github.com/boilercodes/fastapi-sql/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/rmenai-blueprints/fastapi/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
+    <a href="https://github.com/boilercodes/fastapi-sql/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -72,23 +72,23 @@ will change all the files to match your repository.
 
 ### GitHub:
 
-* [Test](https://github.com/rmenai-blueprints/fastapi/blob/main/.github/workflows/test.yaml),
-  [Build](https://github.com/rmenai-blueprints/fastapi/blob/main/.github/workflows/build.yaml) and
-  [Deploy](https://github.com/rmenai-blueprints/fastapi/blob/main/.github/workflows/deploy.yaml) GitHub workflows.
-* [Issues](https://github.com/rmenai-blueprints/fastapi/tree/main/.github/ISSUE_TEMPLATE)
-  and [pull requests](https://github.com/rmenai-blueprints/fastapi/blob/main/.github/pull_request_template.md) templates.
+* [Test](https://github.com/boilercodes/fastapi-sql/blob/main/.github/workflows/test.yaml),
+  [Build](https://github.com/boilercodes/fastapi-sql/blob/main/.github/workflows/build.yaml) and
+  [Deploy](https://github.com/boilercodes/fastapi-sql/blob/main/.github/workflows/deploy.yaml) GitHub workflows.
+* [Issues](https://github.com/boilercodes/fastapi-sql/tree/main/.github/ISSUE_TEMPLATE)
+  and [pull requests](https://github.com/boilercodes/fastapi-sql/blob/main/.github/pull_request_template.md) templates.
 
 <!-- CONTRIBUTING -->
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/rmenai-blueprints/fastapi/blob/main/CONTRIBUTING.md) for ways to get started.
+See [CONTRIBUTING.md](https://github.com/boilercodes/fastapi-sql/blob/main/CONTRIBUTING.md) for ways to get started.
 
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/rmenai-blueprints/fastapi/blob/main/LICENSE) for more
+Distributed under the MIT License. See [LICENSE](https://github.com/boilercodes/fastapi-sql/blob/main/LICENSE) for more
 information.
 
 <!-- ACKNOWLEDGMENTS -->

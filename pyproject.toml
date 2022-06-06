@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "rmenai-blueprints/fastapi"
+name = "boilercodes/fastapi-sql"
 version = "0.1.0"
 description = "My FastAPI template"
 authors = ["rmenai <rami.menai@outlook.com>"]

@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   rename:
-    if: ${{ github.repository != 'boilercodes/fastapi' }}
+    if: ${{ github.repository != 'boilercodes/fastapi-sql' }}
     runs-on: ubuntu-latest
 
     steps:
