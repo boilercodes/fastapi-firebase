@@ -1,57 +1,13 @@
-<br />
-<p align="center">
-  <a href="https://github.com/{repo}">
-    <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="Logo" width="80" height="80">
-  </a>
+# [{title}](./README.md) &middot; [![GitHub license]](./LICENSE) ![Test Action]
 
-<h3 align="center">{title}</h3>
+<!-- Table of Contents -->
 
-  <p align="center">
-    {description}
-    <br />
-    <a href="https://github.com/{repo}"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/{repo}">View Demo</a>
-    ·
-    <a href="https://github.com/{repo}/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
-    ·
-    <a href="https://github.com/{repo}/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
-  </p>
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#installation">Installation</a>
-      <ul>
-        <li><a href="#using-docker">Using Docker</a></li>
-        <li><a href="#for-development">For development</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#environment-variables">Environment Variables</a>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-{description}.
-
-
-<!-- INSTALLATION -->
+- [Installation](#installation)
+    - [For development](#for-development)
+    - [For production](#for-production)
+- [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [License](#license)
 
 ## Installation
 
@@ -61,62 +17,70 @@ The first step will be to clone the repo
 git clone https://github.com/{repo}.git
 ```
 
-### Using Docker
+### For development
+
+The requirements are:
+
+* [Python] and [Poetry]
+
+1. Install the dependencies
+   ```shell
+   poetry install
+   ```
+
+### For production
 
 Using Docker is generally recommended (but not strictly required) because it abstracts away some additional set up work.
 
 The requirements for Docker are:
 
-* [Docker CE](https://docs.docker.com/install/)
-* [Docker Compose](https://docs.docker.com/compose/install/)
+* [Docker CE]
+* [Docker Compose]
     * `pip install docker-compose`
     * This is only a required step for linux. Docker comes bundled with docker-compose on Mac OS and Windows.
 
-### For development
-
-The requirements are:
-
-* [Python](https://www.python.org/downloads/) and [Poetry](https://python-poetry.org/docs/)
-
-1. Install the backend dependencies
-   ```shell
-   poetry install
-   ```
-
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file or in the
-docker-compose.yaml file.
+To run this project, you will need to add the following environment variables.
 
-| Variable     | Description               | Default                                                |
-|--------------|---------------------------|--------------------------------------------------------|
-| PROJECT_NAME | The name of the API       | FastAPI                                                |
-| API_ENDPOINT | The endpoint of the API   | /api/v1                                                |
-| API_PORT     | The API port              | 8080                                                   |
-| POSTGRES_URI | The Postgres database URI | postgresql://postgres:changeme@localhost:5432/postgres |
-
-<!-- USAGE EXAMPLES -->
+| Variable              | Description               | Default  |
+|-----------------------|---------------------------|----------|
+| API_NAME              | The name of the API       | FastAPI  |
+| API_ENDPOINT          | The endpoint of the API   | /api/v1  |
+| API_HOST              | The API host              | 0.0.0.0  |
+| API_PORT              | The API port              | 8080     |
+| FIREBASE_PROJECT_ID   | The Firebase project ID   | REQUIRED |
+| FIREBASE_PRIVATE_KEY  | The Firebase private key  | REQUIRED |
+| FIREBASE_CLIENT_EMAIL | The Firebase client email | REQUIRED |
+| DEBUG                 | Toggles debug mode        | False    |
 
 ## Usage
 
-Now you are done! You can run the project using docker-compose
+Now you are done! You can run the project using Docker
 
 ```shell
 docker-compose up
 ```
 
-Or you can run the backend and frontend manually using
+Or start the API manually with
 
 ```shell
 poetry run task start
 ```
 
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/{repo}/blob/main/CONTRIBUTING.md) for ways to get started.
-
-<!-- LICENSE -->
-
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/{repo}/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
+
+<!-- Packages Links -->
+
+[docker ce]: https://docs.docker.com/install/
+[docker compose]: https://docs.docker.com/compose/install/
+[poetry]: https://python-poetry.org/docs/
+[python]: https://www.python.org/downloads/
+
+
+<!-- Shields.io links -->
+
+[gitHub license]: https://img.shields.io/badge/license-MIT-blue.svg
+[test action]: https://github.com/{repo}/actions/workflows/test.yaml/badge.svg

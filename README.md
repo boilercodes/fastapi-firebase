@@ -1,105 +1,80 @@
-<br />
-<p align="center">
-  <a href="https://github.com/boilercodes/fastapi-firebase">
-    <img src="https://cdn.worldvectorlogo.com/logos/fastapi-1.svg" alt="Logo" width="80" height="80">
-  </a>
+# [FastAPI-Firebase Template](./README.md) &middot; [![GitHub license]](./LICENSE) ![Test Action]
 
-<h3 align="center">FastAPI</h3>
+This is an advanced production-ready template for your next API which includes many useful features, such as logging,
+Firebase integration, testing and more.
 
-  <p align="center">
-    A modern high-performance web framework for building APIs with Python 3.6+
-    <br />
-    <a href="https://github.com/boilercodes/fastapi-firebase"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/boilercodes/fastapi-firebase">View Demo</a>
-    ·
-    <a href="https://github.com/boilercodes/fastapi-firebase/issues/new?assignees=&labels=&template=bug_report.md&title=">Report Bug</a>
-    ·
-    <a href="https://github.com/boilercodes/fastapi-firebase/issues/new?assignees=&labels=&template=feature_request.md&title=">Request Feature</a>
-  </p>
+<!-- Table of Contents -->
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#features">Features</a></li>
-    <ul>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#backend">Backend</a></li>
-        <li><a href="#github">Github</a></li>
-      </ul>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-This is the FastAPI template that I use for my backend and API development in Python.
-
-<!-- Usage -->
+- [Usage](#usage)
+- [Features](#features)
+  - [Project](#project)
+  - [Github](#github)
+- [License](#license)
+- [Contact](#contact)
 
 ## Usage
 
-All you need to do is click on the "Use this template" button. When the repo is created a GitHub action will start. It
-will change all the files to match your repository.
-
-<!-- Features -->
+All you need to do is click on the [Use this template] button. When your repo is created, wait at least 20 seconds until
+the running action ends.
 
 ## Features
 
 ### Project:
-* [Docker](https://www.docker.com/) for container packaging.
 
-### Backend:
-* [FastAPI](https://fastapi.tiangolo.com/) for the backend API.
-* [Firebase](https://firebase.google.com/) for the database.
-* [Poetry](https://python-poetry.org/) for dependency management.
-* [Pytest](https://docs.pytest.org/en/6.2.x/) for writing powerful tests.
-* [pre-commit](https://pre-commit.com/) and [flake8](https://flake8.pycqa.org/en/latest/) for git hooks linting.
+* [.env] for environment variables.
+* [Colorlog] for colorful logging.
+* [Docker] for container packaging.
+* [FastAPI] for API development.
+* [Firebase] for the database.
+* [Poetry] for dependency management.
+* [Pydantic] for settings management.
+* [Pytest] for writing powerful tests.
+* [pre-commit] and [flake8] for git hooks linting.
 
-### GitHub:
+### GitHub
 
-* [Test](https://github.com/boilercodes/fastapi-firebase/blob/main/.github/workflows/test.yaml),
-  [Build](https://github.com/boilercodes/fastapi-firebase/blob/main/.github/workflows/build.yaml) and
-  [Deploy](https://github.com/boilercodes/fastapi-firebase/blob/main/.github/workflows/deploy.yaml) GitHub workflows.
-* [Issues](https://github.com/boilercodes/fastapi-firebase/tree/main/.github/ISSUE_TEMPLATE)
-  and [pull requests](https://github.com/boilercodes/fastapi-firebase/blob/main/.github/pull_request_template.md) templates.
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/boilercodes/fastapi-firebase/blob/main/CONTRIBUTING.md) for ways to get started.
-
-<!-- LICENSE -->
+- [Community Standards] files.
+- [Issues](./.github/ISSUE_TEMPLATE) and [Pull Requests](./.github/pull_request_template.md) templates.
+- [Packages] as Docker images.
+- [Releases] with auto-generated release notes.
+- [Test](./.github/workflows/test.yaml), [Build](./.github/workflows/build.yaml)
+  and [Deploy](./.github/workflows/deploy.yaml) GitHub workflows.
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/boilercodes/fastapi-firebase/blob/main/LICENSE) for more
-information.
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgements
-
- - [fastapi-boilterplate](https://github.com/skb1129/fastapi-boilerplate)
- - [full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql)
- - [sir-lancebot](https://github.com/python-discord/sir-lancebot)
-
-<!-- CONTACT -->
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
 ## Contact
 
-Menai Rami - [@menai_rami](https://twitter.com/menai_rami) - rami.menai@outlook.com
+Rami Menai - [@menai_rami][twitter] - [rami.menai@outlook.com][email]
+
+<!-- Packages Links -->
+
+[.env]: https://pypi.org/project/python-dotenv/
+[colorlog]: https://pypi.org/project/colorlog/
+[docker]: https://www.docker.com/
+[dotenv]: https://pypi.org/project/python-dotenv/
+[fastapi]: https://fastapi.tiangolo.com/
+[firebase]: https://firebase.google.com/
+[flake8]: https://flake8.pycqa.org/en/latest/
+[poetry]: https://python-poetry.org/
+[pre-commit]: https://pre-commit.com/
+[pydantic]: https://pydantic-docs.helpmanual.io/
+[pytest]: https://docs.pytest.org/en/6.2.x/
+
+<!-- Repository links -->
+
+[community standards]: https://github.com/boilercodes/fastapi-firebase/community
+[releases]: https://github.com/boilercodes/fastapi-firebase/releases/
+[packages]: https://github.com/boilercodes/fastapi-firebase/pkgs/container/fastapi-firebase
+[use this template]: https://github.com/boilercodes/fastapi-firebase/generate
+
+<!-- Shields.io links -->
+
+[gitHub license]: https://img.shields.io/badge/license-MIT-blue.svg
+[test action]: https://github.com/boilercodes/fastapi-firebase/actions/workflows/test.yaml/badge.svg
+
+<!-- Social Media links -->
+
+[email]: mailto:rami.menai@outlook.com
+[twitter]: https://twitter.com/menai_rami
