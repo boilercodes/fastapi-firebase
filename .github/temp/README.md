@@ -43,16 +43,16 @@ The requirements for Docker are:
 
 To run this project, you will need to add the following environment variables.
 
-| Variable              | Description               | Default  |
-|-----------------------|---------------------------|----------|
-| API_NAME              | The name of the API       | FastAPI  |
-| API_ENDPOINT          | The endpoint of the API   | /api/v1  |
-| API_HOST              | The API host              | 0.0.0.0  |
-| API_PORT              | The API port              | 8080     |
-| FIREBASE_PROJECT_ID   | The Firebase project ID   | REQUIRED |
-| FIREBASE_PRIVATE_KEY  | The Firebase private key  | REQUIRED |
-| FIREBASE_CLIENT_EMAIL | The Firebase client email | REQUIRED |
-| DEBUG                 | Toggles debug mode        | False    |
+| Variable              | Description               | Default    |
+|-----------------------|---------------------------|------------|
+| API_NAME              | The name of the API       | "FastAPI"  |
+| API_ENDPOINT          | The endpoint of the API   | "/api/v1"  |
+| API_HOST              | The API host              | "0.0.0.0"  |
+| API_PORT              | The API port              | 8080       |
+| FIREBASE_PROJECT_ID   | The Firebase project ID   | * Required |
+| FIREBASE_PRIVATE_KEY  | The Firebase private key  | * Required |
+| FIREBASE_CLIENT_EMAIL | The Firebase client email | * Required |
+| DEBUG                 | Toggles debug mode        | False      |
 
 ## Usage
 
